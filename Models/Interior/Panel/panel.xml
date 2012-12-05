@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.465 </y-m>
+      <z-m>  0.091 </z-m>
+    </offsets>
+  </model>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.363 </y-m>
+      <z-m>  0.091 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.266 </y-m>
+      <z-m>  0.091 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m> -0.465 </y-m>
+      <z-m> -0.009 </z-m>
+    </offsets>
+  </model>
+
+  <!-- COMP -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/comp/comp.xml</path>
+    <offsets>
+      <x-m> -0.002 </x-m>
+      <y-m> -0.363 </y-m>
+      <z-m> -0.009 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.004 </x-m>
+      <y-m> -0.266 </y-m>
+      <z-m> -0.009 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TACHIMETER -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/rpm/tach.xml</path>
+    <offsets>
+      <x-m>  0.001 </x-m>
+      <y-m>  0.191 </y-m>
+      <z-m>  0.091 </z-m>
+    </offsets>
+  </model>
+
+  <!-- MANOMETER -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/man/man.xml</path>
+    <offsets>
+      <x-m> -0.009 </x-m>
+      <y-m>  0.289 </y-m>
+      <z-m>  0.091 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Magnetic Compass -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/MagneticCompass/MagneticCompass.xml</path>
+    <offsets>
+      <x-m>  0.026 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.171 </z-m>
+    </offsets>
+  </model>
+
+ <!-- Switch -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/Switch/instr-lights.xml</path>
+    <offsets>
+      <x-m>  0.00074 </x-m>
+      <y-m> -0.53001 </y-m>
+      <z-m> -0.23999 </z-m>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/Switch/land-lights.xml</path>
+    <offsets>
+      <x-m>  0.00074 </x-m>
+      <y-m> -0.49501 </y-m>
+      <z-m> -0.23999 </z-m>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/Switch/nav-lights.xml</path>
+    <offsets>
+      <x-m>  0.00074 </x-m>
+      <y-m> -0.46101 </y-m>
+      <z-m> -0.23999 </z-m>
+     </offsets>
+  </model>
+
+</PropertyList>
