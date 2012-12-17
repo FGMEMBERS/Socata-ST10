@@ -4,7 +4,7 @@
 
   <sim include="Nasal/views.xml">
 
-    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <author>BARANGER Emmanuel (3D/FDM), Samaliet (Panel)</author>
     <aircraft-version>0.2</aircraft-version>
     <status>Alpha</status>
 
@@ -23,6 +23,7 @@
       <livery>
         <file type="string">default</file>
       </livery>
+      <hide-yoke>true</hide-yoke>
     </model>
 
     <systems>
@@ -53,16 +54,16 @@
     </multiplay>
 
     <help>
-      <title>Yak 18</title>
+      <title>Socota ST 10 Diplomate</title>
       <line>______________________________________________</line>
     </help>
 
     <st10>
       <state type="int">0</state>
-      <airspeed-kmh type="float">0.0</airspeed-kmh>
-      <engine-rpm type="float">0.0</engine-rpm>
-      <engine-volume-low-rpm type="float">0.0</engine-volume-low-rpm>
-      <engine-volume-high-rpm type="float">0.0</engine-volume-high-rpm>
+      <airspeed-kmh type="float">0</airspeed-kmh>
+      <engine-rpm type="float">0</engine-rpm>
+      <engine-volume-low-rpm type="float">0</engine-volume-low-rpm>
+      <engine-volume-high-rpm type="float">0</engine-volume-high-rpm>
     </st10>
 
     <weight n="0">
@@ -102,7 +103,7 @@
 
   <engines>
     <engine>
-      <rpm type="float">0.0</rpm>
+      <rpm type="float">0</rpm>
     </engine>
   </engines>
 
@@ -112,11 +113,9 @@
       <armed type="bool">true</armed>
       <test type="bool">false</test>
     </elt>
-    <!--
     <garmin196>
       <texture-file>../../Socata-ST10/Models/Interior/Panel/Instruments/garmin196/coque1.png</texture-file>
     </garmin196>
-    -->
     <encoder>
       <serviceable type="bool">1</serviceable>
       <name>encoder</name>
@@ -156,6 +155,25 @@
       <file>Aircraft/Socata-ST10/Nasal/Electrical.nas</file>
       <file>Aircraft/Socata-ST10/Nasal/system.nas</file>
     </st10>
+    <kr87>
+      <file>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/kr87-adf/kr87.nas</file>
+    </kr87>
+    <kap140>
+      <file>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/kap140/autopilot/kap140.nas</file>
+      <!-- We can set some variables that might be
+           aircraft specific. We must do it after the file
+           to override the ones that are in the .nas file.
+           gsNeedleDeflection = "/instrumentation/nav/gs-needle-deflection";
+      -->
+      <script>
+        <![CDATA[ 
+          staticPressure = "systems/static/pressure-inhg";
+        ]]>
+      </script>
+    </kap140>
+    <garmin196>
+      <file>Aircraft/Instruments-3d/garmin196/garmin196.nas</file>
+    </garmin196>
   </nasal>
 
 </PropertyList>

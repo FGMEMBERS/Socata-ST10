@@ -189,3 +189,13 @@ var update = func {
         }
     settimer(update,0);
 }
+
+
+controls.gearDown = func(switchPosition) {
+    if(getprop("systems/electrical/outputs/landing-gear") < 8.0) {return; }
+    if (switchPosition < 0) {
+      setprop("controls/gear/gear-down", 0);
+    } elsif (switchPosition > 0) {
+      setprop("controls/gear/gear-down", 1);
+    }
+}

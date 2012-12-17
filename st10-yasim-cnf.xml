@@ -5,6 +5,7 @@
   <sim>
 
     <description>Socata ST 10 Diplomate (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM), Samaliet (Panel)</author>
     <flight-model archive="y">yasim</flight-model>
     <aero archive="y">st10-yasim</aero>
 

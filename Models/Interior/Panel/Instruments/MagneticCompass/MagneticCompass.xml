@@ -5,8 +5,10 @@
   <path>MagneticCompass.ac</path>
 
   <animation>
+    <object-name>Case</object-name>
     <object-name>Ball</object-name>
-
+    <object-name>Marker</object-name>
+    
     <object-name>vitre</object-name>
   </animation>
 

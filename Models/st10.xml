@@ -33,6 +33,10 @@
     <object-name>porte</object-name>
     <object-name>air</object-name>
     <object-name>ailes</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteG2</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>porteD2</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
     <object-name>voletG</object-name>
@@ -43,10 +47,18 @@
     <object-name>antenne</object-name>
     <object-name>bol</object-name>
     <object-name>helice</object-name>
+    <object-name>supportbeacon</object-name>
+    <object-name>pito</object-name>
+    <object-name>bouchon_reservoir</object-name>
+    <object-name>poignees_haut</object-name>
+    <object-name>ManillaR</object-name>
 
     <object-name>trous</object-name>
+    <object-name>axeA</object-name>
     <object-name>roueA</object-name>
+    <object-name>axeG</object-name>
     <object-name>roueG</object-name>
+    <object-name>axeD</object-name>
     <object-name>roueD</object-name>
 
     <!-- Objets transparents -->
@@ -54,6 +66,12 @@
     <object-name>vitreporte</object-name>
     <object-name>propblur</object-name>
     <object-name>propdisc</object-name>
+    <object-name>LuzBeacon</object-name>
+    <object-name>Cable</object-name>
+    <object-name>LeftNavLight</object-name>
+    <object-name>RightNavLight</object-name>
+    <object-name>StrobeOff</object-name>
+    <object-name>LucesLanding</object-name>
   </animation>
 
   <animation>
@@ -62,6 +80,10 @@
     <object-name>porte</object-name>
     <object-name>air</object-name>
     <object-name>ailes</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteG2</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>porteD2</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
     <object-name>voletG</object-name>
@@ -72,10 +94,18 @@
     <object-name>antenne</object-name>
     <object-name>bol</object-name>
     <object-name>helice</object-name>
+    <object-name>supportbeacon</object-name>
+    <object-name>pito</object-name>
+    <object-name>bouchon_reservoir</object-name>
+    <object-name>poignees_haut</object-name>
+    <object-name>ManillaR</object-name>
 
     <object-name>trous</object-name>
+    <object-name>axeA</object-name>
     <object-name>roueA</object-name>
+    <object-name>axeG</object-name>
     <object-name>roueG</object-name>
+    <object-name>axeD</object-name>
     <object-name>roueD</object-name>
 
     <property-base>sim/model/livery</property-base>
@@ -100,6 +130,10 @@
     <object-name>porte</object-name>
     <object-name>air</object-name>
     <object-name>ailes</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteG2</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>porteD2</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
     <object-name>voletG</object-name>
@@ -110,6 +144,11 @@
     <object-name>antenne</object-name>
     <object-name>bol</object-name>
     <object-name>helice</object-name>
+    <object-name>supportbeacon</object-name>
+    <object-name>pito</object-name>
+    <object-name>bouchon_reservoir</object-name>
+    <object-name>poignees_haut</object-name>
+    <object-name>ManillaR</object-name>
   </effect>
 
   <animation>
@@ -118,12 +157,18 @@
     <object-name>vitreporte</object-name>
     <object-name>propblur</object-name>
     <object-name>propdisc</object-name>
+    <object-name>LuzBeacon</object-name>
+    <object-name>Cable</object-name>
+    <object-name>LeftNavLight</object-name>
+    <object-name>RightNavLight</object-name>
+    <object-name>StrobeOff</object-name>
+    <object-name>LucesLanding</object-name>
   </animation>
 
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <texture>glass_shader.png</texture>
     <object-name>vitres</object-name>
     <object-name>vitreporte</object-name>
   </animation>
@@ -138,24 +183,57 @@
     <object-name>vitreporte</object-name>
     <object-name>propblur</object-name>
     <object-name>propdisc</object-name>
+    <object-name>LuzBeacon</object-name>
+    <object-name>Cable</object-name>
+    <object-name>LeftNavLight</object-name>
+    <object-name>RightNavLight</object-name>
+    <object-name>StrobeOff</object-name>
+    <object-name>LucesLanding</object-name>
   </effect>
 
- <!-- Interieur -->
+  <!-- Interieur -->
   <model>
     <name>Interieur</name>
     <path>Aircraft/Socata-ST10/Models/Interior/interior.xml</path>
   </model>
   
+  <!-- For Rembrandt -->
+  <animation>
+    <type>noshadow</type>
+    <object-name>Interieur</object-name>
+  </animation>
+
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/Socata-ST10/Models/shadow.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -1.240 </z-m>
+      <z-m> -1.290 </z-m>
     </offsets>
   </model>
   
+  <!-- Cranking effects -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.67293 </x-m>
+      <y-m> -0.17669 </y-m>
+      <z-m> -0.81494 </z-m>
+      <pitch-deg>  45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.67293 </x-m>
+      <y-m>  0.17669 </y-m>
+      <z-m> -0.81494 </z-m>
+      <pitch-deg>  45 </pitch-deg>
+    </offsets>
+  </model>
+
   <!-- Effets sur le sol -->
   <!-- Roue avant -->
   <model>
@@ -353,6 +431,7 @@
   <!-- rentree des roues -->
   <animation>
     <name>RoueAvant</name>
+    <object-name>axeA</object-name>
     <object-name>roueA</object-name>
   </animation>
 
@@ -361,13 +440,13 @@
     <object-name>RoueAvant</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep> -67 </dep></entry>
-      <entry><ind> 1 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0 </ind><dep> -90 </dep></entry>
+      <entry><ind> 1 </ind><dep>    0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -2.50135 </x-m>
       <y-m>  0.00000 </y-m>
-      <z-m> -0.06493 </z-m>
+      <z-m> -0.64933 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -378,6 +457,7 @@
 
   <animation>
     <name>RoueGauche</name>
+    <object-name>axeG</object-name>
     <object-name>roueG</object-name>
   </animation>
 
@@ -403,6 +483,7 @@
 
   <animation>
     <name>RoueDroite</name>
+    <object-name>axeD</object-name>
     <object-name>roueD</object-name>
   </animation>
 
@@ -426,10 +507,108 @@
     </axis>
   </animation>
 
+  <!-- Animation des portes des trains -->
+  <animation>
+    <type>rotate</type>
+    <object-name>porteG1</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -95 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -1.09805 </x1-m>
+      <y1-m> -1.45560 </y1-m>
+      <z1-m> -0.72423 </z1-m>
+      <x2-m> -0.87011 </x2-m>
+      <y2-m> -1.45561 </y2-m>
+      <z2-m> -0.71363 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>porteG2</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -90 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -1.09805 </x1-m>
+      <y1-m> -1.45560 </y1-m>
+      <z1-m> -0.72423 </z1-m>
+      <x2-m> -0.87011 </x2-m>
+      <y2-m> -1.45561 </y2-m>
+      <z2-m> -0.71363 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>porteG2</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <factor> -0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>porteD1</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 95 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -1.09805 </x1-m>
+      <y1-m>  1.45560 </y1-m>
+      <z1-m> -0.72423 </z1-m>
+      <x2-m> -0.87011 </x2-m>
+      <y2-m>  1.45561 </y2-m>
+      <z2-m> -0.71363 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>porteD2</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 90 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -1.09805 </x1-m>
+      <y1-m>  1.45560 </y1-m>
+      <z1-m> -0.72423 </z1-m>
+      <x2-m> -0.87011 </x2-m>
+      <y2-m>  1.45561 </y2-m>
+      <z2-m> -0.71363 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>porteD2</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
   <!-- Ouverture des portes -->
   <animation>
     <name>LaPorte</name>
     <object-name>porte</object-name>
+    <object-name>ManillaR</object-name>
     <object-name>vitreporte</object-name>
   </animation>
 
@@ -462,73 +641,123 @@
     </axis>
   </animation>
 
+  <!-- Rotation des roues lors du roulage -->
+  <animation>
+    <type>spin</type>
+    <object-name>roueA</object-name>
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -2.62499 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -1.24212 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueG</object-name>
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -0.82974 </x-m>
+      <y-m> -1.41007 </y-m>
+      <z-m> -1.24400 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueD</object-name>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -0.82974 </x-m>
+      <y-m>  1.41007 </y-m>
+      <z-m> -1.24400 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
   <!-- Effets lumineux -->
   <model>
     <path>Aircraft/Socata-ST10/Models/light/beacon.xml</path>
     <offsets>
-      <x-m> 0.47667 </x-m>
+      <x-m> 0.48482 </x-m>
       <y-m> 0.00000 </y-m>
-      <z-m> 0.21710 </z-m>
+      <z-m> 0.23809 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/Socata-ST10/Models/light/RedLight.xml</path>
     <offsets>
-      <x-m> -1.12852 </x-m>
-      <y-m> -4.78903 </y-m>
-      <z-m> -0.18270 </z-m>
+      <x-m> -1.24841 </x-m>
+      <y-m> -4.79623 </y-m>
+      <z-m> -0.17538 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/Socata-ST10/Models/light/StrobeWhite.xml</path>
     <offsets>
-      <x-m> -1.10852 </x-m>
-      <y-m> -4.78903 </y-m>
-      <z-m> -0.18270 </z-m>
+      <x-m> -1.20653 </x-m>
+      <y-m> -4.79623 </y-m>
+      <z-m> -0.17538 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/Socata-ST10/Models/light/GreenLight.xml</path>
     <offsets>
-      <x-m> -1.12852 </x-m>
-      <y-m>  4.78903 </y-m>
-      <z-m> -0.18270 </z-m>
+      <x-m> -1.24841 </x-m>
+      <y-m>  4.79623 </y-m>
+      <z-m> -0.17538 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/Socata-ST10/Models/light/StrobeWhite.xml</path>
     <offsets>
-      <x-m> -1.10852 </x-m>
-      <y-m>  4.78903 </y-m>
-      <z-m> -0.18270 </z-m>
+      <x-m> -1.20653 </x-m>
+      <y-m>  4.79623 </y-m>
+      <z-m> -0.17538 </z-m>
     </offsets>
   </model>
 
-  <!-- Gear light cone
+  <!-- Gear light cone -->
   <model>
-    <name>LightCone</name>
     <path>Aircraft/Socata-ST10/Models/light/light-cone.xml</path>
     <offsets>
-      <x-m> -3.673 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.701 </z-m>
+      <x-m> -3.11693 </x-m>
+      <y-m> -0.24708 </y-m>
+      <z-m> -0.48726 </z-m>
       <pitch-deg> -7.5 </pitch-deg>
     </offsets>
   </model>
 
-  <animation>
-    <type>select</type>
-    <object-name>LightCone</object-name>
-    <condition>
-      <equals>
-        <property>controls/switches/landing-light</property>
-        <value> 1 </value>
-      </equals>
-    </condition>
-  </animation> -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m> -3.11693 </x-m>
+      <y-m>  0.24708 </y-m>
+      <z-m> -0.48726 </z-m>
+      <pitch-deg> -7.5 </pitch-deg>
+    </offsets>
+  </model>
 
 </PropertyList>
