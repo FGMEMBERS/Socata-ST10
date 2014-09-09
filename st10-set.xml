@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- <PropertyList include="st10-jsbsim-cnf.xml"> -->
+<PropertyList include="st10-yasim-cnf.xml">
+
+  <sim>
+    <description>Socata ST10 Diplomate (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM), Samaliet (Panel)</author>
+
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 3 </systems>
+      <cockpit type="int"> 4 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
+  </sim>
+
+</PropertyList>
+

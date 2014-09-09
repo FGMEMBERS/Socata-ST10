@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>intporte</object-name>
+    <object-name>porteint</object-name>
+    <object-name>RightVisor</object-name>
+    <object-name>LeftVisor</object-name> 
+
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporte</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporte</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporte</object-name>
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -1.31450 </x-m>
+      <y-m> -0.27000 </y-m>
+      <z-m> -0.35990 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -1.59967 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.11559 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Les sièges -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Seats/all-seats.xml</path>
+  </model>
+
+  <!-- Ouverture des portes -->
+  <animation>
+    <name>IntLaPorte</name>
+    <object-name>intporte</object-name>
+    <object-name>intvitreporte</object-name>
+    <object-name>porteint</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>IntLaPorte</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>IntLaPorte</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> -80 </factor>
+    <axis>
+      <x1-m> -1.69953 </x1-m>
+      <y1-m>  0.56963 </y1-m>
+      <z1-m> -0.12354 </z1-m>
+      <x2-m> -1.69953 </x2-m>
+      <y2-m>  0.58823 </y2-m>
+      <z2-m> -0.51063 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- picks for left visor -->
+  <animation>
+    <type>pick</type>
+    <object-name>LeftVisor</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.leftvisor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>LeftVisor</object-name>
+    <property>sim/model/door-positions/leftvisor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -60 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -1.30906 </x1-m>
+      <y1-m> -0.38236 </y1-m>
+      <z1-m>  0.29071 </z1-m>
+      <x2-m> -1.43518 </x2-m>
+      <y2-m> -0.01537 </y2-m>
+      <z2-m>  0.32393 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- picks for right visor -->
+  <animation>
+    <type>pick</type>
+    <object-name>RightVisor</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.rightvisor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>RightVisor</object-name>
+    <property>sim/model/door-positions/rightvisor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -60 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -1.43518 </x1-m>
+      <y1-m>  0.01537 </y1-m>
+      <z1-m>  0.32393 </z1-m>
+      <x2-m> -1.30906 </x2-m>
+      <y2-m>  0.38236 </y2-m>
+      <z2-m>  0.29071 </z2-m>
+    </axis>
+  </animation>
+
+</PropertyList>

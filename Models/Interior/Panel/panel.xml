@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- circuitbreakers -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/circuitbreakers/All-cb.xml</path>
+  </model>
+
+  <!-- Switch -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/Switch/all-switchs.xml</path>
+  </model>
+
+  <!-- Throttles -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/throttles/throttles.xml</path>
+    <offsets>
+      <x-m>  0.008021 </x-m>
+      <y-m>  0.020740 </y-m>
+      <z-m> -0.215080 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ai -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/kfc200/ki256.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m> -0.363 </y-m>
+      <z-m>  0.093 </z-m>
+    </offsets>
+  </model>
+
+  <!-- hsi -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/kfc200/ki252a.xml</path>
+      <offsets>
+       <x-m> -0.003 </x-m>
+       <y-m> -0.366 </y-m>
+       <z-m> -0.009 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m> -0.266 </y-m>
+      <z-m>  0.093 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m>  0.291 </y-m>
+      <z-m>  0.092 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ASI -->
+   <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m> -0.465 </y-m>
+      <z-m>  0.093 </z-m>
+    </offsets>
+  </model>
+
+  <!-- hi -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/hi/hi.xml</path>
+      <offsets>
+       <x-m> -0.001 </x-m>
+       <y-m>  0.304 </y-m>
+       <z-m> -0.009 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ADF -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/kr87-adf/ki227-01.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m> -0.465 </y-m>
+      <z-m> -0.009 </z-m>
+    </offsets>
+  </model>
+
+  <!--KR87 -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/kr87-adf/kr87.xml</path>
+    <offsets>
+      <x-m>  0.004 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.123 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.002 </x-m>
+      <y-m> -0.266 </y-m>
+      <z-m> -0.010 </z-m>
+    </offsets>
+  </model>
+
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.191 </y-m>
+      <z-m> 0.090 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/kap140/KAP140TwoAxisAlt.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.107 </z-m>
+    </offsets>
+  </model>
+
+  <!-- dme -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/dme40/dme40.xml</path>
+      <offsets>
+       <x-m> -0.001 </x-m>
+       <y-m> -0.249 </y-m>
+       <z-m> -0.109 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/audio-plug/audio-plug.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.524 </y-m>
+      <z-m> -0.246 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
+    <offsets>
+      <x-m> 0.004 </x-m>
+      <y-m> 0.374 </y-m>
+      <z-m> 0.091 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m> -0.465 </y-m>
+      <z-m> -0.107 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/kx165/kx165-1.xml</path>
+    <offsets>
+      <x-m> -0.006 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.073 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/kt70/kt70.xml</path>
+    <offsets>
+      <x-m> 0.003 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.059 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/garmin196/garmin196_support2.xml</path>
+    <offsets>
+      <x-m> 0.013 </x-m>
+      <y-m> 0.001 </y-m>
+      <z-m>-0.003 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Magnetos -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/magneto/mags.xml</path>
+    <offsets>
+      <x-m>  0.001 </x-m>
+      <y-m> -0.251 </y-m>
+      <z-m> -0.225 </z-m>
+    </offsets>
+  </model>
+
+  <!-- clock -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.098 </y-m>
+      <z-m> -0.228 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Switch -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/Switch/batt-lights.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.161 </y-m>
+      <z-m> -0.223 </z-m>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/Switch/alt-lights.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.194 </y-m>
+      <z-m> -0.223 </z-m>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/Switch/nav-lights.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.320 </y-m>
+      <z-m> -0.235 </z-m>
+     </offsets>
+  </model>
+ 
+  <!-- Warning -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/warning/warning.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.009 </y-m>
+      <z-m>  0.139 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Flaps indicator -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/flap-ind/flap-indicator.xml</path>
+    <offsets>
+      <x-m>  0.001 </x-m>
+      <y-m>  0.244 </y-m>
+      <z-m> -0.238 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/oil-temp/oil-temp.xml</path>
+    <offsets>
+      <x-m>  0.001 </x-m>
+      <y-m>  0.228 </y-m>
+      <z-m> -0.034 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/oil-press/oil-press.xml</path>
+    <offsets>
+      <x-m>  0.001 </x-m>
+      <y-m>  0.175 </y-m>
+      <z-m> -0.034 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/fuel-press/fuel-press.xml</path>
+    <offsets>
+      <x-m>  0.001 </x-m>
+      <y-m>  0.228 </y-m>
+      <z-m>  0.018 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/charge/charge.xml</path>
+    <offsets>
+      <x-m>  0.001 </x-m>
+      <y-m>  0.175 </y-m>
+      <z-m>  0.018 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/Yokes/yoke.xml</path>
+    <offsets>
+      <x-m> -0.030 </x-m>
+      <y-m> -0.331 </y-m>
+      <z-m> -0.098 </z-m>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/Yokes/yoke.xml</path>
+    <offsets>
+      <x-m> -0.030 </x-m>
+      <y-m>  0.331 </y-m>
+      <z-m> -0.098 </z-m>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/Pedals/pedals.xml</path>
+    <offsets>
+      <x-m> -0.173 </x-m>
+      <y-m> -0.339 </y-m>
+      <z-m> -0.547 </z-m>
+     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/Pedals/pedals.xml</path>
+    <offsets>
+      <x-m> -0.173 </x-m>
+      <y-m>  0.339 </y-m>
+      <z-m> -0.547 </z-m>
+     </offsets>
+  </model>
+
+  <!-- Magnetic Compass -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/MagneticCompass/MagneticCompass.xml</path>
+    <offsets>
+      <x-m>  0.026 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.171 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Parke Brake -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/ParkBrake/parkbrake.xml</path>
+    <offsets>
+      <x-m> -0.002254 </x-m>
+      <y-m>  0.086780 </y-m>
+      <z-m> -0.361250 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Flaps -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/flaps/flaps.xml</path>
+    <offsets>
+      <x-m>  0.01491 </x-m>
+      <y-m>  0.15232 </y-m>
+      <z-m> -0.21993 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Gear ??? enfin peut être je ne suis pas sur... désolé Olivier :( -->
+  <model>
+    <path>Aircraft/Socata-ST10/Models/Interior/Panel/Instruments/Gear/gear.xml</path>
+    <offsets>
+      <x-m>  0.002634 </x-m>
+      <y-m> -0.182740 </y-m>
+      <z-m> -0.084540 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
