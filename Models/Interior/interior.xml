@@ -19,20 +19,13 @@
     <object-name>intvitreporte</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Socata-ST10/Models/Effects/Glass/glass</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intvitreporte</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intvitres</object-name>
-    <object-name>intvitreporte</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/Socata-ST10/Models/Pilot/pilot.xml</path>
@@ -75,7 +68,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-        <script>doors.passenger.toggle();</script>
+        <script>doors.crew.toggle();</script>
       </binding>
     </action>
   </animation>
@@ -83,7 +76,7 @@
   <animation>
     <type>rotate</type>
     <object-name>IntLaPorte</object-name>
-    <property>sim/model/door-positions/passenger/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> -80 </factor>
     <axis>
       <x1-m> -1.69953 </x1-m>

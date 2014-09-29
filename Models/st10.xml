@@ -13,9 +13,9 @@
       var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
       var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
 
-      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
-      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
-
+      var crew_door = self.getNode("sim/model/door-positions/crew/position-norm", 1);
+      var passenger_door = self.getNode("sim/model/door-positions/passenger/position-norm", 1);
+      
       crew_door.alias(float_0);
       passenger_door.alias(float_0);
     </load>
@@ -55,19 +55,22 @@
 
     <object-name>trous</object-name>
     <object-name>axeA</object-name>
+    <object-name>axeA2</object-name>
     <object-name>roueA</object-name>
     <object-name>axeG</object-name>
+    <object-name>axeG2</object-name>
     <object-name>roueG</object-name>
     <object-name>axeD</object-name>
+    <object-name>axeD2</object-name>
     <object-name>roueD</object-name>
-
+    <object-name>cables</object-name>
+    
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
     <object-name>vitreporte</object-name>
     <object-name>propblur</object-name>
     <object-name>propdisc</object-name>
     <object-name>LuzBeacon</object-name>
-    <object-name>Cable</object-name>
     <object-name>LeftNavLight</object-name>
     <object-name>RightNavLight</object-name>
     <object-name>StrobeOff</object-name>
@@ -102,21 +105,19 @@
 
     <object-name>trous</object-name>
     <object-name>axeA</object-name>
+    <object-name>axeA2</object-name>
     <object-name>roueA</object-name>
     <object-name>axeG</object-name>
+    <object-name>axeG2</object-name>
     <object-name>roueG</object-name>
     <object-name>axeD</object-name>
+    <object-name>axeD2</object-name>
     <object-name>roueD</object-name>
-
+    <object-name>cables</object-name>
+    
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-    <specular>
-      <red-prop>specular/red</red-prop>
-      <green-prop>specular/green</green-prop>
-      <blue-prop>specular/blue</blue-prop>
-    </specular>
-
     <emission>
       <red-prop>emission/red</red-prop>
       <green-prop>emission/green</green-prop>
@@ -151,38 +152,11 @@
     <object-name>ManillaR</object-name>
   </effect>
 
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitres</object-name>
-    <object-name>vitreporte</object-name>
-    <object-name>propblur</object-name>
-    <object-name>propdisc</object-name>
-    <object-name>LuzBeacon</object-name>
-    <object-name>Cable</object-name>
-    <object-name>LeftNavLight</object-name>
-    <object-name>RightNavLight</object-name>
-    <object-name>StrobeOff</object-name>
-    <object-name>LucesLanding</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
-    <object-name>vitres</object-name>
-    <object-name>vitreporte</object-name>
-  </animation>
-
-  <!--  REMBRANDT support for transparent objects -->
+  <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
+    <inherits-from>Aircraft/Socata-ST10/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitres</object-name>
     <object-name>vitreporte</object-name>
-    <object-name>propblur</object-name>
-    <object-name>propdisc</object-name>
     <object-name>LuzBeacon</object-name>
     <object-name>Cable</object-name>
     <object-name>LeftNavLight</object-name>
@@ -190,19 +164,28 @@
     <object-name>StrobeOff</object-name>
     <object-name>LucesLanding</object-name>
   </effect>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitres</object-name>
+    <object-name>vitreporte</object-name>
+    <object-name>LuzBeacon</object-name>
+    <object-name>Cable</object-name>
+    <object-name>LeftNavLight</object-name>
+    <object-name>RightNavLight</object-name>
+    <object-name>StrobeOff</object-name>
+    <object-name>LucesLanding</object-name>
+    <object-name>propblur</object-name>
+    <object-name>propdisc</object-name>
+  </effect>
 
   <!-- Interieur -->
   <model>
-    <name>Interieur</name>
+    <usage>interieur</usage>
     <path>Aircraft/Socata-ST10/Models/Interior/interior.xml</path>
   </model>
   
-  <!-- For Rembrandt -->
-  <animation>
-    <type>noshadow</type>
-    <object-name>Interieur</object-name>
-  </animation>
-
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/Socata-ST10/Models/shadow.xml</path>
@@ -220,7 +203,7 @@
       <x-m> -2.67293 </x-m>
       <y-m> -0.17669 </y-m>
       <z-m> -0.81494 </z-m>
-      <pitch-deg>  45 </pitch-deg>
+      <pitch-deg> 45 </pitch-deg>
     </offsets>
   </model>
 
@@ -230,7 +213,7 @@
       <x-m> -2.67293 </x-m>
       <y-m>  0.17669 </y-m>
       <z-m> -0.81494 </z-m>
-      <pitch-deg>  45 </pitch-deg>
+      <pitch-deg> 45 </pitch-deg>
     </offsets>
   </model>
 
@@ -310,7 +293,7 @@
     <condition>
       <less-than>
         <property>engines/engine[0]/rpm</property>
-	<value>900</value>
+        <value>900</value>
       </less-than>
     </condition>
   </animation>
@@ -318,6 +301,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceComplete</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value> 5 </value>
+      </greater-than>
+    </condition>
     <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -432,6 +421,7 @@
   <animation>
     <name>RoueAvant</name>
     <object-name>axeA</object-name>
+    <object-name>axeA2</object-name>
     <object-name>roueA</object-name>
   </animation>
 
@@ -458,6 +448,7 @@
   <animation>
     <name>RoueGauche</name>
     <object-name>axeG</object-name>
+    <object-name>axeG2</object-name>
     <object-name>roueG</object-name>
   </animation>
 
@@ -484,6 +475,7 @@
   <animation>
     <name>RoueDroite</name>
     <object-name>axeD</object-name>
+    <object-name>axeD2</object-name>
     <object-name>roueD</object-name>
   </animation>
 
@@ -507,6 +499,70 @@
     </axis>
   </animation>
 
+  <!-- Compression -->
+  <animation>
+    <name>SousRoueAvant</name>
+    <object-name>axeA2</object-name>
+    <object-name>roueA</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>SousRoueAvant</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0.0000 </dep></entry>
+      <entry><ind> 1 </ind><dep> -0.1101 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -0.026 </x>
+      <y>  0.000 </y>
+      <z> -0.107 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>SousRoueGauche</name>
+    <object-name>axeG2</object-name>
+    <object-name>roueG</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>SousRoueGauche</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0.0000 </dep></entry>
+      <entry><ind> 1 </ind><dep> -0.1916 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -0.015 </x>
+      <y>  0.000 </y>
+      <z> -0.191 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>SousRoueDroite</name>
+    <object-name>axeD2</object-name>
+    <object-name>roueD</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>SousRoueDroite</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0.0000 </dep></entry>
+      <entry><ind> 1 </ind><dep> -0.1916 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -0.015 </x>
+      <y>  0.000 </y>
+      <z> -0.191 </z>
+    </axis>
+  </animation>
+  
   <!-- Animation des portes des trains -->
   <animation>
     <type>rotate</type>
@@ -621,7 +677,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-        <script>doors.passenger.toggle();</script>
+        <script>doors.crew.toggle();</script>
       </binding>
     </action>
   </animation>
@@ -629,7 +685,7 @@
   <animation>
     <type>rotate</type>
     <object-name>LaPorte</object-name>
-    <property>sim/model/door-positions/passenger/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> -80 </factor>
     <axis>
       <x1-m> -1.69953 </x1-m>
@@ -641,6 +697,22 @@
     </axis>
   </animation>
 
+  <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>roueA</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -10 </factor>
+    <axis>
+      <x1-m> -2.6274 </x1-m>
+      <y1-m>  0.0000 </y1-m>
+      <z1-m> -1.2442 </z1-m>
+      <x2-m> -2.5023 </x2-m>
+      <y2-m>  0.0000 </y2-m>
+      <z2-m> -0.7531 </z2-m>
+    </axis>
+  </animation>
+  
   <!-- Rotation des roues lors du roulage -->
   <animation>
     <type>spin</type>
@@ -713,7 +785,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Socata-ST10/Models/light/StrobeWhite.xml</path>
+    <path>Aircraft/Socata-ST10/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m> -1.20653 </x-m>
       <y-m> -4.79623 </y-m>
@@ -731,7 +803,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Socata-ST10/Models/light/StrobeWhite.xml</path>
+    <path>Aircraft/Socata-ST10/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m> -1.20653 </x-m>
       <y-m>  4.79623 </y-m>

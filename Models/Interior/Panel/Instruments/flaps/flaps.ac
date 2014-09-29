@@ -9,7 +9,7 @@ data 12
 PalancaFlaps
 texture "flaps.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 48
 0.038219 0.00138 0.0001
 0.038219 -0.00138 0.0001

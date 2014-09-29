@@ -7,9 +7,9 @@ name "Switch"
 loc 0.006257 -0.001548 0.000013
 data 6
 Switch
-texture "colors.png"
+texture "switch.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 642
 -0.006769 0.001511 -0.002354
 -0.005845 0.001263 -0.002354
@@ -4916,9 +4916,9 @@ name "base"
 loc -0.00026 0.000012 0.000013
 data 4
 base
-texture "colors.png"
+texture "switch.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 285
 0 0.00255 -0.003816
 0 0.000896 -0.004502
@@ -7004,9 +7004,9 @@ name "info"
 loc -0.00023 0.016163 0
 data 4
 info
-texture "colors.png"
+texture "switch.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 4
 -0 0.016124 -0.016134
 0 -0.016124 -0.016134

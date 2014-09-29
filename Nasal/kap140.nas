@@ -36,7 +36,6 @@ var lockPitchMode = propLocks.getNode("pitch-mode", 1);
 var lockRollArm   = propLocks.getNode("roll-arm", 1);
 var lockPitchArm  = propLocks.getNode("pitch-arm", 1);
 
-
 var rollModes     = { "OFF" : 0, "ROL" : 1, "HDG" : 2, "NAV" : 3, "REV" : 4, "APR" : 5 };
 var pitchModes    = { "OFF" : 0, "VS" : 1, "ALT" : 2, "GS" : 3 };
 var rollArmModes  = { "OFF" : 0, "NAV" : 1, "APR" : 2, "REV" : 3 };
@@ -120,7 +119,6 @@ var baroOffset = 0.0;
 var baroChange = 1;
 var minVoltageLimit = 8.0;
 
-
 var ptCheck = func {
   ##print("pitch trim check");
 
@@ -182,7 +180,6 @@ var ptCheck = func {
 
   settimer(ptCheck, 0.5);
 }
-
 
 var apInit = func {
   ##print("ap init");
@@ -374,7 +371,6 @@ var apButton = func {
     apFlasher.blink(5).switch(0).switch(1);
   }
 }
-
 
 var hdgButton = func {
   ##print("hdgButton");
@@ -571,7 +567,6 @@ var hdgButton = func {
     }
   }
 }
-
 
 var navButton = func {
   ##print("navButton");
@@ -896,7 +891,6 @@ var aprArmFromRol = func
   }
 }
 
-
 var gsArm = func {
   ##
   # Abort the GS-ARM mode if something has changed the arm mode to something
@@ -941,7 +935,6 @@ var gsArm = func {
 
 }
 
-
 var revButton = func {
   ##print("revButton");
 #  Disable button if too little power
@@ -983,7 +976,6 @@ var revButton = func {
     revArmFromRol();
   }
 }
-
 
 var revArmFromHdg = func
 {
@@ -1047,7 +1039,6 @@ var revArmFromHdg = func
   }
 }
 
-
 var revArmFromRol = func
 {
   ##
@@ -1109,7 +1100,6 @@ var revArmFromRol = func
   }
 }
 
-
 var altButtonTimer = func {
   #print("alt button timer");
   #print(altButtonTimerIgnore);
@@ -1126,7 +1116,6 @@ var altButtonTimer = func {
       altButtonTimerIgnore = altButtonTimerIgnore - 1;
   }
 }
-
 
 var altButton = func {
   ##print("altButton");
@@ -1183,7 +1172,6 @@ var altButton = func {
     settingTargetAltPressure.setDoubleValue(altPressure);
   }
 }
-
 
 var downButton = func {
   ##print("downButton");#  Disable button if too little power
@@ -1273,7 +1261,6 @@ var armButton = func {
   }
 }
 
-
 var baroButtonTimer = func {
   #print("baro button timer");
 
@@ -1326,7 +1313,6 @@ var baroButtonPress = func {
   }
 }
 
-
 var baroButtonRelease = func {
   #print("baro button release");
 #  Disable button if too little power
@@ -1335,12 +1321,10 @@ var baroButtonRelease = func {
   baroButtonDown = 0;
 }
 
-
 var pow = func(base, exponent) {
   #print(base,exponent);
   return math.exp(exponent*math.ln(base));
 }
-
 
 var pressureToHeight = func(p, p0) {
 #
@@ -1362,7 +1346,6 @@ var pressureToHeight = func(p, p0) {
   var z = -coefficient * (1.0-pow((p/p0),exponent));
   return z;
 }
-
 
 heightToPressure = func(z, p0) {
   #var p0 = p0;    # [Pa]
@@ -1515,7 +1498,6 @@ var knobSmallUp = func {
   }
 }
 
-
 var knobLargeUp = func {
   #print("knob large up");
 #  Disable button if too little power
@@ -1557,7 +1539,6 @@ var knobLargeUp = func {
   }
 }
 
-
 var knobSmallDown = func {
   #print("knob small down");
 #  Disable button if too little power
@@ -1598,7 +1579,6 @@ var knobSmallDown = func {
     }
   }
 }
-
 
 var knobLargeDown = func {
   #print("knob large down");

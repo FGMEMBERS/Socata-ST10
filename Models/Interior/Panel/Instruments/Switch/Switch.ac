@@ -7,9 +7,9 @@ name "Switch"
 loc 0 0 -0
 data 6
 Switch
-texture "colors.png"
+texture "switch.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 32
 0.002805 0.00036 -0.004093
 0.002513 -0.001296 -0.004093

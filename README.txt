@@ -3,8 +3,8 @@ English/Français
 [English]
 ----------
 
-Yakovlev Yak 18T
-================
+Socata St 10
+============
 
 Manufacturer                  :
 Type                          :
@@ -24,11 +24,14 @@ Some useful keys:
 Thanks
 ======
 
+Samaliet for the fantastic panel and his liveries
+
 ===============
 BARANGER Emmanuel
 August 05 2012
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
 
 
@@ -38,8 +41,8 @@ embaranger@free.fr
 Un peu d'histoire
 =================
 
-Yakovlev Yak 18T
-================
+Socata St 10
+============
 
 Constructeur                  :
 Type                          :
@@ -60,9 +63,12 @@ Quelques touches utiles :
 Remerciements
 =============
 
+Samaliet pour son fantastique tableau de bord et ses livrées
+
 ===============
 BARANGER Emmanuel
 05 Août 2012
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
