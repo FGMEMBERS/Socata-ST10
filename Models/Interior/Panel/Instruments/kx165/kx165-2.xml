@@ -173,10 +173,10 @@
     <object-name>NavUse</object-name>
     <object-name>NavStby</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -186,10 +186,10 @@
     <object-name>CommKnobs</object-name>
     <object-name>NavKnobs</object-name>
     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.2 </red>
       <green> 0.1 </green>
       <blue>  0.1 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 

@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="st10-jsbsim-cnf.xml"> -->
-<PropertyList include="st10-yasim-cnf.xml">
+<PropertyList include="st10-base.xml">
 
   <sim>
-    <description>Socata ST10 Diplomate (YASim)</description>
+    
+    <description>Socata ST 10 Diplomate (YASim)</description>
     <author>BARANGER Emmanuel (3D/FDM), Samaliet (Panel)</author>
-
+    <aircraft-version>0.3</aircraft-version>
+    <status>Alpha</status>
+    
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">st10-yasim</aero>
+    
     <rating>
       <FDM type="int">     3 </FDM>
       <systems type="int"> 3 </systems>
@@ -17,4 +22,3 @@
   </sim>
 
 </PropertyList>
-

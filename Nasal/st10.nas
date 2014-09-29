@@ -169,13 +169,11 @@ var set_winch = func{
     props.globals.getNode("/controls/winch/place").setBoolValue(0);
 }
 
-
 controls.startEngine = func(v = 1) {
     var vlt = getprop("systems/electrical/volts") or 0;
     if(vlt < 15) v=0;
     setprop("controls/engines/engine/starter",v);
 }
-
 
 var update = func {
     WaspJr.update();
@@ -189,7 +187,6 @@ var update = func {
         }
     settimer(update,0);
 }
-
 
 controls.gearDown = func(switchPosition) {
     if(getprop("systems/electrical/outputs/landing-gear") < 8.0) {return; }
