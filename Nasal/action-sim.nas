@@ -115,7 +115,6 @@ var init_actions = func {
     settimer(update_actions, 0);
 }
 
-
 var update_actions = func {
 
     if ( click.getValue() ) { settimer(resetClick, 0.05); }
@@ -253,4 +252,3 @@ var resetPrime = func { prime.setBoolValue(0); }
 # Setup listener call to start update loop once the fdm is initialized
 # 
 setlistener("/sim/signals/fdm-initialized", init_actions);
-

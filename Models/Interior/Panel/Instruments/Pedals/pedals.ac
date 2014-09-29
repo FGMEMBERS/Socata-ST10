@@ -9,7 +9,7 @@ data 7
 LHpedal
 texture "pedals.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 44
 -0.037998 0.033948 0.15394
 -0.035228 0.046231 0.15394
@@ -266,7 +266,7 @@ data 7
 RHpedal
 texture "pedals.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 44
 -0.051198 0.072139 -0.157431
 0.081592 -0.039281 -0.157431
